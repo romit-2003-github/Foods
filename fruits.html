@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store | Fruits</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav id="navbar" class="nav">
+        <div class="logo">
+            <h2>BigMart Shopping</h2>
+        </div>
+        <div class="navItems" id="navItems">
+            <ul>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="index.html">Our Services</a></li>
+                <!-- <li class="item"><a href="#">Our Delivery Partners</a></li> -->
+                <li class="item"><a href="about.html">About Us</a></li>
+                <li class="item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="cardContainer">
+        <div class="contain">
+            <div class="Cards1">
+                <div class="cardItems" id="apple">
+                    <img src="Fruits/apple.png" alt="apple">
+                    <div class="det">
+                        <h1>Apple</h1>
+                        <p>Rs.10/piece</p>
+                        <button class="btn" id="appleBtn" onclick="myfunc()">Buy Now</button>
+                    </div>
+
+                </div>
+                <div class="cardItems" id="greenApple">
+                    <img src="Fruits/green apple.png" alt="apple">
+                    <div class="det">
+                        <h1>Apple Green</h1>
+                        <p>Rs.15/piece</p>
+                        <button class="btn" id="gappleBtn" onclick="myfunc()">Buy Now</button>
+                    </div>
+
+                </div>
+                <div class="cardItems" id="oranges">
+                    <img src="Fruits/oranges.png" alt="apple">
+                    <div class="det">
+                        <h1>Oranges</h1>
+                        <p>Rs.10/piece</p>
+                        <button class="btn" id="orangeBtn" onclick="myfunc()">Buy Now</button>
+                    </div>
+
+                </div>
+                <div class="cardItems" id="mangoes">
+                    <img src="Fruits/mangoes.png" alt="apple">
+                    <div class="det">
+                        <h1>Mangoes</h1>
+                        <p>Rs.7.5/piece</p>
+                        <button class="btn" id="mangoBtn" onclick="myfunc()">Buy Now</button>
+                    </div>
+
+                </div>
+                <div class="cardItems" id="papaya">
+                    <img src="Fruits/papaya.png" alt="apple">
+                    <div class="det">
+                        <h1>Papaya</h1>
+                        <p>Rs.5/piece</p>
+                        <button class="btn" id="papayaBtn" onclick="myfunc()">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Cards2">
+                <div class="cardItems" id="melons">
+                    <img src="Fruits/melons.png" alt="apple">
+                    <div class="det">
+                        <h1>Melon</h1>
+                        <p>Rs.15/piece</p>
+                        <button class="btn" id="melonBtn" onclick="myfunc()">Buy Now</button>
+                    </div>
+
+                </div>
+                <div class="cardItems" id="kiwi">
+                    <img src="Fruits/kiwi.png" alt="apple">
+                    <div class="det">
+                        <h1>Kiwi</h1>
+                        <p>Rs.50/piece</p>
+                        <button class="btn" id="kiwiBtn" onclick="myfunc()">Buy Now</button>
+                    </div>
+
+                </div>
+                <div class="cardItems" id="banana">
+                    <img src="Fruits/banana.png" alt="apple">
+                    <div class="det">
+                        <h1>Banana</h1>
+                        <p>Rs.50/dozen</p>
+                        <button class="btn" id="bananaBtn" onclick="myfunc()">Buy Now</button>
+                    </div>
+
+                </div>
+                <div class="cardItems" id="grapes">
+                    <img src="Fruits/grapes.png" alt="apple">
+                    <div class="det">
+                        <h1>Grapes</h1>
+                        <p>Rs.80/kg</p>
+                        <button class="btn" id="grapesBtn" onclick="myfunc()">Buy Now</button>
+                    </div>
+
+                </div>
+                <div class="cardItems" id="pineapple">
+                    <img src="Fruits/pineappple.png" alt="apple">
+                    <div class="det">
+                        <h1>Pineapple</h1>
+                        <p>Rs.53/piece</p>
+                        <button class="btn" id="pineappleBtn" onclick="myfunc()">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <script>
+        let but = document.getElementsByClassName('btn');
+
+        function myfunc()
+        {
+            let a = prompt("Please enter quantity !");
+            console.log(a);
+            if(a==0)
+            {
+                alert("Items can't be Zero!");
+            }
+            else{
+                alert("Item added to cart !!");
+            }        
+        }
+        
+    </script>
+</body>

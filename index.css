@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Rubik+Distressed&family=Source+Code+Pro:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Times New Roman';
+    background-color: whitesmoke;
+}
+
+/* index.html */
+
+.nav{
+    display: flex;
+    background-color: rgb(24, 23, 23);
+    height: 12.5vh;
+    align-items: center;
+    color: antiquewhite;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+#contactId,#aboutId{
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    
+}
+
+
+
+
+
+
+.logo{
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+#language{
+    width: 130px;
+    /* padding: 5px; */
+    background-color: rgb(24, 23, 23);
+    border: none;
+    color: antiquewhite;
+    font-size: 18px;
+    height: 50%;
+    margin: auto;
+}
+#language:hover{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+
+.navItems ul{
+    display: flex;
+    /* padding: 10px; */
+}
+
+.navItems ul li{
+    padding: 30px;
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+
+.navItems ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 10px;
+}
+
+.navItems ul li a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+
+.container{
+    background-color: whitesmoke;
+    display: grid;
+    justify-content: space-around;
+    height: 78vh;
+    grid-template-areas: 
+    'writeup mainPhoto'
+    'writeup mainPhoto';
+}
+
+.writeUp{
+    display: grid;
+    grid-area: writeup;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    padding: 95px;
+    font-family: 'Rubik Distressed', cursive;
+}
+
+
+.heading{
+    font-size: 66px;
+}
+
+.para{
+    font-size: 30px;
+}
+
+.photo{
+    display: grid;
+    grid-area: mainPhoto;
+    justify-content: center;
+}
+
+.photo img{
+    width: 50%;
+    height: auto;
+    padding: 77px;
+    width: 71vh;
+}
+
+.featProd{
+    background-color:rgb(226, 217, 217);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;    
+}
+
+.featProd a{
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+}
+
+.featProd img{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+.about img{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+
+
+.Items{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+}
+
+.itemHead{
+    font-size: 50px;
+    margin-top: 40px;
+    font-weight: bold
+}
+
+.cards{
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+    'fruits vegetables snacks dairy'
+    'fruits vegetables snacks dairy'
+    'fruits vegetables snacks dairy';
+    /* margin: 20px; */
+}
+
+.card1{
+    background-color: white;
+    width: 20vw;
+    height: 55vh;
+    border: 5px solid black;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 38px;
+}
+
+#card_1{
+    grid-area: fruits;
+}
+#card_2{
+    grid-area: vegetables;
+}
+#card_3{
+    grid-area: snacks;
+}
+#card_4{
+    grid-area: dairy;
+}
+
+.card1 img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 305px;
+    height: 253px;
+}
+
+.cards h1{
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Rubik Distressed', cursive;
+    font-weight: lighter;
+}
+.cards h3{
+    text-align: center;
+}
+.cards a{  
+    text-decoration: none;
+    color: black;
+}
+
+.cards a:hover{
+    font-size: x-large;
+    animation-name: example;
+    animation-duration: 0.5s;
+}
+
+@keyframes example {
+    from {font-size: medium;}
+    to {font-size: x-large;}
+}
+
+.about{
+    margin: 20px;
+    background-color: white;
+    height: 50vh;
+}
+
+.about h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+.about h2{
+    text-align: center;
+    margin: 30px;
+}
+
+.span_icons{
+    position: relative;
+    margin: auto;
+    left: 47%;
+    /* margin: 0px 10px; */
+}
+
+.ContactUs{
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Media Queries */
+
+@media (min-width:200px) and  (max-width:700px) 
+{
+    .nav{
+        /* position: absolute; */
+        max-width: 100%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-areas :
+        'writeup writeup writeup'
+        'writeup writeup writeup';
+    }
+    .photo img{
+        display: none;
+    }
+    .writeUp{
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+/* fruits.html */
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    height: 84.25vh;
+    padding-top:20px ;
+}
+
+.Cards1{
+   display: flex;
+
+}
+
+.Cards2,.Cards3{
+   display: flex;
+}
+
+.cardItems{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 18vw;
+    height: 35vh;
+    border: 5px solid black;
+    margin: 10px 30px;
+    border-radius: 30px ;
+    /* justify-content: space-around; */
+}
+
+.cardItems img{
+    margin: 10px 30px;
+    width: 10vw;
+    height: 15vh;
+}
+
+.det{
+    text-align: center;
+    margin: 10px;
+    line-height: 35px;
+}
+
+.btn{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#apple{
+    grid-area: apple;
+}
+
+#greenApple{
+    grid-area: greenApple;
+}
+
+#oranges{
+    grid-area: oranges;
+}
+
+#mangoes{
+    grid-area: mangoes;
+}
+
+#papaya{
+    grid-area: papaya;
+}
+
+#melons{
+    grid-area: melons;
+}
+
+#banana{
+    grid-area: banana;
+}
+
+#grapes{
+    grid-area: grapes;
+}
+
+#pineapple{
+    grid-area: pineapple;
+}
+
+/* contact page */
+
+.address{
+    margin-top: 4rem;
+    margin-left: 5rem;
+    font-size: 1rem;
+    grid-area: address;
+}
+
+.address h1{
+    text-shadow: 2px 2px 5px red;
+    margin: 5px;
+}
+
+.email{
+    margin-left: 5rem;
+    font-size: 1rem;
+    grid-area: email;
+}
+
+.phone{
+    margin-left: 5rem;
+    font-size: 1rem;
+    grid-area: phone;
+}
+
+.phone h3{
+    text-shadow: 2px 2px 5px red;
+}
+
+.email h3{
+    text-shadow: 2px 2px 5px red;
+}
+
+.map{
+    grid-area: map;
+    margin-top: 5rem;
+}
+
+.contact{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    'address address map map'
+    'phone phone map map'
+    'email email map map';
+}

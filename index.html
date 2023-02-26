@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store | Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav id="navbar" class="nav">
+        <div class="logo">
+            <h2>Energen Foods</h2>
+        </div>
+        <div class="navItems" id="navItems">
+            <ul>
+                <li class="item"><a href="#" id="homeId">Home</a></li>
+                <li class="item"><a href="#Items" id="servicesLink">Our Services</a></li>
+                
+                <!-- <li class="item"><a href="#">Our Delivery Partners</a></li> -->
+                <li class="item"><a href="about.html">About Us</a></li>
+                <li class="item"><a href="contact.html">Our Community</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container" id="container">
+        <div class="writeUp">
+            <p class="heading">Get your ingredients now!</p>
+            <p class="para">Get your Hands on all types of Non-Allergic food ingredients..</p>
+        </div>
+        <div class="photo">
+            <img src="mainPhoto.png" alt="">
+        </div>    
+    </section>
+
+    <div class="featProd">
+        <!-- <a href="#Items">Featured Products</a> -->
+        <span><a href="#Items"><img src="down.png" alt="" onclick="servicesFunc()"></a></span>
+    </div>
+
+    <div class="Items" id="Items">
+        <header class="itemHead">Featured Products</header>
+        <div class="cards">
+            <div class="card1" id="card_1">
+                <img src="fruits.jpeg" alt="loading">
+                <h1>Fruits</h1>
+                <a href="fruits.html"><h3>Shop Now</h3></a>
+            </div>
+            <div class="card1" id="card_2">
+                <img src="vegetables.jpg" alt="loading">
+                <h1>Vegetables</h1>
+                <a href="vegetables.html"><h3>Shop Now</h3></a>
+            </div>
+            <div class="card1" id="card_3">
+                <img src="snacks.jpeg" alt="loading">
+                <h1>Snacks</h1>
+                <a href="snacks.html"><h3>Shop Now</h3></a>
+            </div>
+            <div class="card1" id="card_4">
+                <img src="dairy.jpeg" alt="loading">
+                <h1>Dairy</h1>
+                <a href="dairy.html"><h3>Shop Now</h3></a>
+            </div>
+        </div>   
+    </section>
+
+    <div class="about">
+        <span><a href="#"><img src="up.png" onclick="scrollUp()"></a></span>
+    </div>
+
+    
+
+    <script>
+        function scrollUp()
+        {
+            window.scroll({
+            top: 0, 
+            left: 0, 
+            behavior: 'smooth'
+            });
+        }
+
+        function servicesFunc()
+        {
+            let lk = document.getElementById('servicesLink');
+            lk.style.backgroundColor = "white";
+            lk.style.color = "black";
+            lk.style.borderRadius = "25px";
+        }
+    </script>
+</body>
+</html>
